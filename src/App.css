@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Marck Script', cursive;
+}
+
+
+a {
+  font-family: Iceland;
+  animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff,
+      0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+      0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+  }
+}
+
+
+
+.flex-slider {
+  display: flex;
+  justify-content: center; /*центрирование по горизонтали*/
+  align-items: center; /*центрирование по вертикали*/
+  padding: 0;
+}
+.box {
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  flex-basis: 25%;
+  transition: all .3s ease;
+  cursor:default;
+  background: center center no-repeat;
+  background-size: cover;
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+  font-style: inherit;
+}
+.box:hover {
+  flex-basis: 50%;
+}
+.box-1 {
+  background-image: url('./images/Golf.png');
+  border-left: none;
+}
+.box-2 {
+  background-image: url('./images/page1.png');
+}
+.box-3 {
+  background-image: url('./images//web3.png');
+}
+.box-4 {
+  background-image: url('./images/NFT.png');
+}
+
+.box-5 {
+    background-image: url('./images/Diff.png');
+  }
+  
+.box-6 {
+    background-image: url('./images/VR.png');
+  }
+  
+.box-7 {
+  background-image: url('./images/singlepage.png');
+}
+  
+.box-8 {
+  background-image: url('./images/Mi.png');
+}
+
+@media (max-width: 700px) {
+  .flex-slider {
+    flex-flow: column;
+    height: 100vh;
+  }
+  .box {
+    width: 100%;
+  }
+  .box:hover {
+    flex-grow: 20%;
+  }
+}
