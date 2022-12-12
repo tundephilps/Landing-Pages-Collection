@@ -2,3 +2,4 @@ A Collection of landing Pages i made overtime Visit at https://landing-pages-col
 
 
 NFT Page; https://github.com/tundephilps/NFT-Page
+Mi Store; https://github.com/tundephilps/Mi-Store
